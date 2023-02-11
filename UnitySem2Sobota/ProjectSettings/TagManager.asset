@@ -6,6 +6,7 @@ TagManager:
   tags:
   - LowSpeed
   - HighSpeed
+  - PickUp
   layers:
   - Default
   - TransparentFX
