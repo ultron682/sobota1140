@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2037187285}
   - component: {fileID: 2037187286}
   - component: {fileID: 2037187287}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: PortalCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 311
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 678d38531b08f9240bdc5761899834ca, type: 2}
   m_TargetDisplay: 0
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 7335177945151725108}
   - component: {fileID: 7926955734042159671}
   - component: {fileID: 5403607977892335144}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: ColliderPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,8 +118,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6286891872852854919}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.03, y: 1.2673, z: 0.135}
-  m_LocalScale: {x: 0.3806, y: 1, z: 0.489461}
+  m_LocalPosition: {x: 0.1091, y: 0.8354, z: 0.135}
+  m_LocalScale: {x: 0.3155364, y: 1, z: 0.40307194}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7279611440889047594}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 7279611439671969406}
   - component: {fileID: 7279611439671969405}
   - component: {fileID: 7279611439671969404}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7279611439671969379}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5610733, y: 0.8260001, z: 0.09000015}
+  m_LocalPosition: {x: 2.0610733, y: 0.8260001, z: 0}
   m_LocalScale: {x: 1, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 7279611440827785472}
   - component: {fileID: 7279611440827785479}
   - component: {fileID: 7279611440827785478}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7279611440827785477}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4389267, y: 0.8259996, z: 0.09000015}
+  m_LocalPosition: {x: -1.9389267, y: 0.8259994, z: 0}
   m_LocalScale: {x: 1, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -364,7 +364,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7279611440889047594}
-  m_Layer: 0
+  - component: {fileID: 8685144393958180435}
+  m_Layer: 12
   m_Name: Portal
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
@@ -392,6 +393,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8685144393958180435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7279611440889047593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a1420e7fa3df04b8fb290eb9a09052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCamera: {fileID: 2037187286}
+  player: {fileID: 0}
+  myRenderPlane: {fileID: 4665236875472246455}
+  myColliderPlane: {fileID: 7844783408422684464}
+  otherPortal: {fileID: 0}
+  material: {fileID: 2100000, guid: 631c581a02ff70745838e8de06a32580, type: 2}
 --- !u!1 &7279611441456677902
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,7 +423,7 @@ GameObject:
   - component: {fileID: 7279611441456677897}
   - component: {fileID: 7279611441456677896}
   - component: {fileID: 7279611441456677903}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -419,8 +438,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7279611441456677902}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.061073303, y: 3.3259997, z: 0.09000015}
-  m_LocalScale: {x: 1, y: 4, z: 1}
+  m_LocalPosition: {x: 0.061073303, y: 3.3259997, z: 0}
+  m_LocalScale: {x: 1, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7279611440889047594}
@@ -500,7 +519,7 @@ GameObject:
   - component: {fileID: 4665236875472246455}
   - component: {fileID: 1365129502388441684}
   - component: {fileID: 345082981124203300}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: RenderPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -515,8 +534,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8938994170233377725}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.0507, y: 0.822, z: -0.395}
-  m_LocalScale: {x: 0.20187837, y: 1, z: 0.4012186}
+  m_LocalPosition: {x: 0.0638, y: 0.8297, z: -0.5}
+  m_LocalScale: {x: 0.30063927, y: 1, z: 0.4026965}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7279611440889047594}

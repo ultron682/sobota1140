@@ -14,6 +14,10 @@ public class PortalCamera : MonoBehaviour
         PortalCameraController();
     }
 
+    public void SetMyAngle(float angle) {
+        myAngle = angle;
+    }
+
     void PortalCameraController() {
         Vector3 playerOffSetFromPortal = playerCamera.position - otherPortal.position;
         transform.position = playerOffSetFromPortal + portal.position;
