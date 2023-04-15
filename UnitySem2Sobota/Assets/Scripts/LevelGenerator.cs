@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour {
     public Texture2D map;
+    public Texture2D map2;
+    public GameObject Map1;
+    public GameObject Map2;
     public ColorToPrefab[] colorMap;
     public float offset = 5f;
     public Material material01;

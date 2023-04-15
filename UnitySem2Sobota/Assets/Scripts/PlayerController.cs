@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour {
                     speed = startSpeed;
                     break;
                 case "LowSpeed":
-                    speed = startSpeed * 0.2f;
+                    speed = startSpeed * 0.7f;
                         break;
                 case "HighSpeed":
                     speed = startSpeed * 2.5f;
