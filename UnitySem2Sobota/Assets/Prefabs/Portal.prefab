@@ -509,6 +509,10 @@ MonoBehaviour:
   - {fileID: 2856600036993256540}
   - {fileID: 0}
   keyColorToOpenDoor: 0
+  NextLevel: {fileID: 0}
+  red: {fileID: 2100000, guid: 1bedc7784fc0628458041c6405cf9b1f, type: 2}
+  green: {fileID: 2100000, guid: 9cb2d6dce7d25c14db11dca29c34b086, type: 2}
+  gold: {fileID: 2100000, guid: 9ef50a37c3a779e4cb70b01a2934174b, type: 2}
 --- !u!1 &7279611439671969379
 GameObject:
   m_ObjectHideFlags: 0

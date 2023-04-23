@@ -56,12 +56,14 @@ public class GameManager : MonoBehaviour {
         Debug.Log("PauseGame");
         Time.timeScale = 0;
         gamePaused = true;
+        MusicManager.Instance.ChangeMainClip(MusicManager.Instance.clipPause);
     }
 
     public void ResumeGame() {
         Debug.Log("ResumeGame");
         Time.timeScale = 1;
         gamePaused = false;
+        MusicManager.Instance.ChangeMainClip(MusicManager.Instance.clipResume);
     }
 
     void CheckPause() {

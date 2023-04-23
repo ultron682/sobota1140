@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
+    public AudioClip audioClipPicked;
+
     public virtual void Picked() {
         Debug.Log("Podnioslem");
+        MusicManager.Instance.PlayClipOneShot(audioClipPicked);
         Destroy(gameObject);
     }
 

@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1be98e9b98b7b66439dd798e5b92395a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -111,4 +111,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afe2657da4926bc4980cb4a80fc40e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioClipPicked: {fileID: 8300000, guid: 51dac47c8193e384eab331336fc6d24e, type: 3}
   freezTime: 5

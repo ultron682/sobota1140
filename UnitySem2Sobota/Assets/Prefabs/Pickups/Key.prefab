@@ -111,4 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ae7443d55b394e419722e1ec82c543e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioClipPicked: {fileID: 8300000, guid: caa715b07679edd448eab192189ae161, type: 3}
+  red: {fileID: 2100000, guid: 1bedc7784fc0628458041c6405cf9b1f, type: 2}
+  green: {fileID: 2100000, guid: 9cb2d6dce7d25c14db11dca29c34b086, type: 2}
+  gold: {fileID: 2100000, guid: 9ef50a37c3a779e4cb70b01a2934174b, type: 2}
   keyColor: 0
