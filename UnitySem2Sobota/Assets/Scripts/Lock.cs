@@ -39,6 +39,10 @@ public class Lock : MonoBehaviour {
     }
 
     void Update() {
+        if (iCanOpen && !locked) {
+            GameManager.Instance.SetUseInfo("Press E to open LOCK");
+        }
+
         if (Input.GetKeyDown(KeyCode.E) && iCanOpen && !locked) {
             if (CheckTheKey()) {
                 animatorKey.SetTrigger("OpenDoor");
@@ -54,14 +58,15 @@ public class Lock : MonoBehaviour {
     private void OnTriggerEnter(Collider other) {
         if (other.tag == "Player") {
             iCanOpen = true;
-            Debug.Log("Mozesz uzyć klucz");
+            //Debug.Log("Mozesz uzyć klucz");
         }
     }
 
     private void OnTriggerExit(Collider other) {
         if (other.tag == "Player") {
             iCanOpen = false;
-            Debug.Log("Nie mozesz uzyć klucz");
+            //Debug.Log("Nie mozesz uzyć klucz");
+            GameManager.Instance.SetUseInfo(string.Empty);
         }
     }
 
@@ -74,16 +79,22 @@ public class Lock : MonoBehaviour {
     public bool CheckTheKey() {
         if (keyColorToOpenDoor == KeyColor.Red && GameManager.Instance.redKeysCount > 0) {
             GameManager.Instance.redKeysCount--;
+            GameManager.Instance.Text_redKey.text = GameManager.Instance.redKeysCount.ToString();
+
             locked = true;
             return true;
         }
         else if (keyColorToOpenDoor == KeyColor.Green && GameManager.Instance.greenKeysCount > 0) {
             GameManager.Instance.greenKeysCount--;
+            GameManager.Instance.Text_greenKey.text = GameManager.Instance.greenKeysCount.ToString();
+
             locked = true;
             return true;
         }
         else if (keyColorToOpenDoor == KeyColor.Gold && GameManager.Instance.goldKeysCount > 0) {
             GameManager.Instance.goldKeysCount--;
+            GameManager.Instance.Text_goldKey.text = GameManager.Instance.goldKeysCount.ToString();
+
             locked = true;
             return true;
         }
